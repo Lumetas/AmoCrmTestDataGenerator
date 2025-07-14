@@ -30,8 +30,8 @@ if (!in_array($type, ['companies', 'contacts', 'leads', 'customers'])) {
     die("Ошибка: неверный тип данных. Допустимые значения: companies, contacts, leads, customers\n");
 }
 
-if ($count < 1 || $count > 1000) {
-    die("Ошибка: количество записей должно быть от 1 до 1000\n");
+if ($count < 1) {
+    die("Ошибка: количество записей должно быть не меньше 1\n");
 }
 
 if (!in_array($dataType, ['iterable', 'random', 'humanized'])) {
